@@ -20,11 +20,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest
+@WebMvcTest(controllers = PedidoController.class)
 class PedidoControllerTest {
     @Autowired
     private MockMvc mockMvc;
@@ -97,4 +96,3 @@ class PedidoControllerTest {
         Mockito.verify(pedidoService).cancelarPedido(1L);
     }
 }
-
