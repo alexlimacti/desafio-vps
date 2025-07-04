@@ -31,6 +31,7 @@ docker-compose down
 ```
 
 ## Endpoints principais
+- Cadastro de parceiros: `POST /api/parceiros`
 - Cadastro de pedidos: `POST /api/pedidos`
 - Consulta de pedidos: `GET /api/pedidos`, `GET /api/pedidos/{id}`
 - Atualização de status: `PATCH /api/pedidos/{id}/status`
@@ -51,4 +52,3 @@ Para rodar os testes:
 ---
 
 Dúvidas ou sugestões? Abra uma issue!
-
